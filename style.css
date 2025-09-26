@@ -1,0 +1,96 @@
+
+/*chatgpt a lot with the creation of this css file. */
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  background: #2d3e50;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.page-header h2 {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #e0e0e0;
+}
+
+/* Content */
+.content {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2rem;
+}
+
+section h3 {
+  color: #2d3e50;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Videos */
+video {
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  display: block;
+  margin: 1rem 0;
+}
+
+/* Features list */
+.features ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.features li {
+  margin-bottom: 1.5rem;
+}
+
+.features li p {
+  margin-bottom: 0.5rem;
+}
+
+/* Image comparisons */
+.image_comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border: 2px solid #ccc;
+  background-color: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 1rem 0;
+}
+
+.image_comparison img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000;
+  border-radius: 4px;
+  display: block;
+}

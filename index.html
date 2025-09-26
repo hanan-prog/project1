@@ -1,17 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive 2D Geometry</title>
-</head>
-<body>
-    <header>
-        <h1>Project 1 Submission Page!</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interactive 2D Geometry - Project 1</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Project 1 Submission</h1>
+      <h2>Hanan Abdirahman</h2>
     </header>
-    <div>
-        <h2>Image of Program running</h2>
-        <img src="images/prog_running.png" />
-    </div>
-</body>
+
+    <main class="content">
+      <section class="demo">
+        <p>
+          The video below shows the completed project with all required features
+          implemented. Additional videos further down demonstrate each feature
+          individually. One challenge I encountered was calculating the rotation
+          angle so that the square rotated in the direction the mouse was being
+          dragged; this was the feature that took me the longest to implement.
+          Brightening the image also took some time because the scalar I
+          initially added to each pixel was too high, which distorted the image.
+          I eventually realized (after talking about it in class) I needed to clamp the values between 0 and 255.
+        </p>
+        <video autoplay loop muted playsinline>
+          <source src="images/prog_running.mov" type="video/quicktime" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section class="download">
+        <h3>Download</h3>
+        <p>You can download the project <a href="p1.zip" download>here</a>.</p>
+      </section>
+
+      <section class="features">
+        <h3>Required Features</h3>
+        <ul>
+          <li>
+            <p>Translating only when the mouse is inside the rectangle:</p>
+            <video autoplay loop muted playsinline>
+              <source
+                src="images/translate_inside.mov"
+                type="video/quicktime"
+              />
+            </video>
+          </li>
+          <li>
+            <p>
+              Scaling the square when the corner is dragged. This video also
+              shows resetting when the <code>r</code> key is pressed:
+            </p>
+            <video autoplay loop muted playsinline>
+              <source
+                src="images/scaling_reseting.mov"
+                type="video/quicktime"
+              />
+            </video>
+          </li>
+          <li>
+            <p>Rotating the square when the user drags on the edges:</p>
+            <video autoplay loop muted playsinline>
+              <source
+                src="images/rotating_resetting.mov"
+                type="video/quicktime"
+              />
+            </video>
+          </li>
+          <li>
+            <p>
+              Texturing the square with an image loaded from a PPM file, and
+              making the image brighter without distorting the colors:
+            </p>
+            <div class="image_comparison">
+              <img
+                src="images/test_before.png"
+                alt="before brightening test.ppm"
+              />
+              <img
+                src="images/test_after.png"
+                alt="after brightening test.ppm"
+              />
+            </div>
+            <div class="image_comparison">
+              <img
+                src="images/before_bright.png"
+                alt="Before Brightening brick.ppm"
+              />
+              <img
+                src="images/after_bright.png"
+                alt="After Brightening brick.ppm"
+              />
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>
